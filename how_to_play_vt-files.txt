@@ -1,0 +1,13 @@
+================================
+= How to play VT100 Animations =
+================================
+
+
+Found some " .vt " files on Textfiles.org. 
+Use this command to play them:
+
+cat "/path/to/file.vt" | pv -q -L 2000
+
+The -L flag controls the baud rate (bits per second). Seems 9600 plays way to 
+fast on modern computers.
+
